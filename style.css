@@ -1,0 +1,535 @@
+/*======================================
+    JOYERÍA PERLITA
+======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#ffffff;
+}
+
+/*======================================
+    HEADER
+======================================*/
+
+header{
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 0 20px rgba(255,215,0,.2);
+
+}
+
+.logo h1{
+
+    color:#FFD700;
+
+    font-size:38px;
+
+    letter-spacing:2px;
+
+}
+
+.logo p{
+
+    color:#d4af37;
+
+    margin-top:5px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD700;
+
+}
+
+/*======================================
+    HERO
+======================================*/
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:70px 8%;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-texto{
+
+    flex:1;
+
+}
+
+.hero-texto h2{
+
+    font-size:48px;
+
+    color:#FFD700;
+
+    margin-bottom:25px;
+
+}
+
+.hero-texto p{
+
+    font-size:21px;
+
+    line-height:1.8;
+
+}
+
+.hero-imagen{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-imagen img{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:20px;
+
+    border:4px solid gold;
+
+    box-shadow:0 0 30px rgba(255,215,0,.5);
+
+}
+
+/*======================================
+    TITULOS
+======================================*/
+
+section h2{
+
+    text-align:center;
+
+    color:#FFD700;
+
+    margin-bottom:40px;
+
+    font-size:38px;
+
+}
+
+/*======================================
+    CALCULADORAS
+======================================*/
+
+.calculadoras{
+
+    padding:70px 8%;
+
+}
+
+.contenedor-calculadoras{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:35px;
+
+}
+
+.calculadora{
+
+    background:#181818;
+
+    border:2px solid gold;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+
+    transition:.4s;
+
+}
+
+.calculadora:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(255,215,0,.35);
+
+}
+
+.calculadora h3{
+
+    text-align:center;
+
+    color:#FFD700;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+}
+
+.calculadora label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#f4d03f;
+
+}
+
+.calculadora input,
+.calculadora select{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:none;
+
+    outline:none;
+
+    background:#2a2a2a;
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+.calculadora input:focus,
+.calculadora select:focus{
+
+    border:2px solid gold;
+
+}
+
+/*======================================
+    GALERÍA
+======================================*/
+
+.galeria{
+
+    padding:70px 8%;
+
+}
+
+.imagenes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.imagenes img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:3px solid gold;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.imagenes img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 30px gold;
+
+}
+
+/*======================================
+    CONTACTO
+======================================*/
+
+.contacto{
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+.contacto p{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+}
+
+/*======================================
+    FOOTER
+======================================*/
+
+footer{
+
+    background:black;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+/*======================================
+    BOTÓN WHATSAPP
+======================================*/
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:70px;
+
+    height:70px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:38px;
+
+    box-shadow:0 0 20px rgba(0,255,0,.5);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.15);
+
+}
+
+/*======================================
+    SCROLLBAR
+======================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:gold;
+
+    border-radius:10px;
+
+}
+
+/*======================================
+    RESPONSIVE
+======================================*/
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+.hero-texto h2{
+
+    font-size:36px;
+
+    text-align:center;
+
+}
+
+.hero-texto p{
+
+    text-align:center;
+
+}
+
+.contenedor-calculadoras{
+
+    grid-template-columns:1fr;
+
+}
+
+.logo h1{
+
+    font-size:30px;
+
+}
+
+section h2{
+
+    font-size:30px;
+
+}
+
+.contacto p{
+
+    font-size:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.calculadora{
+
+    padding:20px;
+
+}
+
+.hero{
+
+    padding:40px 5%;
+
+}
+
+.galeria{
+
+    padding:40px 5%;
+
+}
+
+.calculadoras{
+
+    padding:40px 5%;
+
+}
+
+.contacto{
+
+    padding:40px 5%;
+
+}
+
+.whatsapp{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:30px;
+
+}
+
+}

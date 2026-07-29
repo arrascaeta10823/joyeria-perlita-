@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joyería Perlita | Compra y Venta de Oro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- ENCABEZADO -->
+    <!-- ============================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>JOYERÍA PERLITA</h1>
+
+            <p>Compra y Venta de Oro</p>
+
+        </div>
+
+        <nav>
+
+            <a href="#inicio">Inicio</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ============================= -->
+    <!-- PORTADA -->
+    <!-- ============================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-texto">
+
+            <h2>Especialistas en Compra y Venta de Oro</h2>
+
+            <p>
+
+                Compramos joyas de oro, monedas, lingotes,
+                oro en desuso y realizamos análisis de pureza
+                con precios actualizados según el mercado internacional.
+
+            </p>
+
+        </div>
+
+        <div class="hero-imagen">
+
+            <!-- CAMBIA ESTA IMAGEN -->
+
+            <img src="imagenes/portada.png"Portada">
+
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- CALCULADORAS -->
+    <!-- ============================= -->
+
+    <section id="calculadora" class="calculadoras">
+
+        <h2>Calculadora de Compra y Venta</h2>
+
+        <div class="contenedor-calculadoras">
+
+            <!-- =================== -->
+            <!-- COMPRA -->
+            <!-- =================== -->
+
+            <div class="calculadora">
+
+                <h3>COMPRA DE ORO</h3>
+
+                <label>Onza Troy (USD)</label>
+                <input type="text" id="onzaCompra" readonly>
+
+                <label>Gramo Oro Puro (USD)</label>
+                <input type="text" id="gramoCompra" readonly>
+
+                <label>Precio del dólar (Bs)</label>
+                <input type="number" id="dolarCompra" value="6.96">
+<label>Pureza del Oro (%)</label>
+
+<input
+type="number"
+id="purezaCompra"
+placeholder="Ejemplo: 75.2">
+                <label>Peso de la joya (gramos)</label>
+
+                <input
+                    type="number"
+                    id="gramosCompra"
+                    placeholder="Ejemplo: 12.5">
+
+                <label>Precio por gramo (Bs)</label>
+
+                <input
+                    type="text"
+                    id="precioGramoCompra"
+                    readonly>
+
+                <label>Total a pagar (Bs)</label>
+
+                <input
+                    type="text"
+                    id="totalCompra"
+                    readonly>
+
+            </div>
+
+            <!-- =================== -->
+            <!-- VENTA -->
+            <!-- =================== -->
+
+            <div class="calculadora">
+
+                <h3>VENTA DE ORO</h3>
+
+                <label>Onza Troy (USD)</label>
+                <input type="text" id="onzaVenta" readonly>
+
+                <label>Gramo Oro Puro (USD)</label>
+                <input type="text" id="gramoVenta" readonly>
+
+                <label>Precio del dólar (Bs)</label>
+
+                <input
+                    type="number"
+                    id="dolarVenta"
+                    value="6.96">
+
+                <label>Kilataje</label>
+
+                <select id="purezaVenta">
+
+                    <option value="1">24K (100%)</option>
+
+                    <option value="0.916">22K (91.6%)</option>
+
+                    <option value="0.875">21K (87.5%)</option>
+
+                    <option value="0.750">18K (75%)</option>
+
+                    <option value="0.585">14K (58.5%)</option>
+
+                    <option value="0.417">10K (41.7%)</option>
+
+                </select>
+
+                <label>Porcentaje de venta (%)</label>
+
+                <input
+                    type="number"
+                    id="porcentajeVenta"
+                    value="110">
+
+                <label>Peso de la joya (gramos)</label>
+
+                <input
+                    type="number"
+                    id="gramosVenta"
+                    placeholder="Ejemplo: 15">
+
+                <label>Precio por gramo (Bs)</label>
+
+                <input
+                    type="text"
+                    id="precioGramoVenta"
+                    readonly>
+
+                <label>Total de venta (Bs)</label>
+
+                <input
+                    type="text"
+                    id="totalVenta"
+                    readonly>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- GALERÍA -->
+    <!-- ============================= -->
+
+    <section class="galeria" id="galeria">
+
+        <h2>Nuestros Productos</h2>
+
+        <div class="imagenes">
+
+            <img src="imagenes/foto1.jpg" alt="">
+            <img src="imagenes/foto2.jpg" alt="">
+            <img src="imagenes/foto3.jpg" alt="">
+            <img src="imagenes/foto4.jpg" alt="">
+            <img src="imagenes/foto5.jpg" alt="">
+            <img src="imagenes/foto6.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- CONTACTO -->
+    <!-- ============================= -->
+
+    <section class="contacto" id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <p>
+
+            📍 Calle Tarapacá<br>
+            La Paz - Bolivia
+
+        </p>
+
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- BOTÓN WHATSAPP -->
+    <!-- ============================= -->
+
+    <a
+        href="https://wa.me/59169957360
+        class="whatsapp"
+        target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <!-- ============================= -->
+    <!-- PIE -->
+    <!-- ============================= -->
+
+    <footer>
+
+        © 2026 Joyería Perlita - Todos los derechos reservados.
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
